@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* global styles (e.g., index.css) */
+body {
+    @apply font-poppins;
+}
+h1{
+        @apply font-poppins;
+}
+/* Perspective container (optional) */
+.perspective-3d {
+    perspective: 1000px;
+}
+
+.tilt-left {
+    transform: perspective(1000px) rotateX(10deg) rotateY(-25deg);
+}
+
+.tilt-center {
+    transform: perspective(1000px) scale(1.05);
+}
+
+.tilt-right {
+    transform: perspective(1000px) rotateX(10deg) rotateY(25deg);
+}
